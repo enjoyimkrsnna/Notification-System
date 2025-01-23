@@ -10,7 +10,6 @@ public class SMSNotificationProvider implements NotificationProvider {
 
     @Override
     public void send(Notification notification) {
-        throw new RuntimeException("test");
-     //   System.out.println("Sending SMS to user: " + notification.getUserId() + " with message: " + notification.getMessage());
+        System.out.println("Sending SMS to user: " + notification.getUserId() + " with message: " + notification.getMessage());
     }
 }
